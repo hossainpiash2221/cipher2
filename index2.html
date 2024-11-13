@@ -55,6 +55,7 @@
                         <select id="cipher" onchange="toggleKeyInput()" class="select select-info w-full mb-5">
                             <option disabled selected>Select Cipher</option>
                             <option value="unique">Unique Cipher</option>
+                            <option value="uniqueSwapCipher">Unique Swap Cipher</option>
                             <option value="caesar">Caesar Cipher</option>
                             <option value="vigenere">Vigenère Cipher</option>
                             
@@ -229,8 +230,11 @@
                     keyInput.style.display='none';
                     keyLabel.style.display='none'
                     break;
-
-                 
+                case 'uniqueSwapCipher':
+                    keyInput.style.display='none';
+                    keyLabel.style.display='none'
+                    break;
+    
             }
         }
 
